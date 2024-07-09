@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="card-body">
+    <div class="d-flex flex-column">
+      <span class="flex-grow-1 fw-bold">Nome</span>
+      <span> <%= equipament.name %></span>
+    </div>
+    <div class="d-flex flex-column">
+      <span class="flex-grow-1 fw-bold">Número de Série</span>
+      <span> <%= equipament.serial_number %></span>
+    </div>
+  </div>
+
+  <div class="card-footer">
+    <%= link_to "Editar", edit_equipament_path(equipament), class: 'btn btn-info' %>
+  </div>
+</div>

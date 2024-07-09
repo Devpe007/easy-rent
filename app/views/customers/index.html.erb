@@ -2,7 +2,9 @@
   <h1 class="flex-grow-1" >Lista de clientes</h1>
 
   <div class="list-actions">
-    <%= link_to "Novo", new_customer_path, class: 'btn btn-primary' %>
+    <% if policy(Customer).create? %>
+      <%= link_to "Novo", new_customer_path, class: 'btn btn-primary' %>
+    <% end %>
   </div>
 
 </div>
