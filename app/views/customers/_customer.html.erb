@@ -6,7 +6,9 @@
     </div>
   </div>
 
-  <div class="card-footer">
-    <%= link_to "Editar", edit_customer_path(customer), class: 'btn btn-info' %>
-  </div>
+  <% if policy(Customer).update? %>
+    <div class="card-footer">
+      <%= link_to "Editar", edit_customer_path(customer), class: 'btn btn-info' %>
+    </div>
+  <% end %>
 </div>

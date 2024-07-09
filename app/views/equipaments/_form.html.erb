@@ -1,0 +1,24 @@
+<div class="card">
+  <%= simple_form_for @equipament do |form| %>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-12 col-md-9">
+          <%= form.input :name %>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <%= form.input :serial_number %>
+        </div>
+      </div>
+
+      <%= form.label :description %>
+      <%= form.rich_text_area :description %>
+    </div>
+
+    <div class="card-footer d-flex justify-content-between">
+      <%= link_to "Voltar", equipaments_path, class: 'btn btn-secondary' %>
+      <%= form.button :button, class: 'btn-primary' %>
+    </div>
+  <% end %>
+</div>
+
