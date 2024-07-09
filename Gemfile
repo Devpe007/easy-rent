@@ -64,3 +64,7 @@ group :development do
 end
 
 gem 'simple_form', '~> 5.3'
+
+gem 'pundit', '~> 2.3'
+
+gem 'devise', '~> 4.9', '>= 4.9.4'
